@@ -4,208 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Computer - Used Laptop Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f8f8f8;
+            padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #0073e6;
-            padding: 20px;
-            text-align: center;
+            padding: 10px;
             color: white;
+            text-align: center;
         }
         header h1 {
-            font-weight: 500;
-            font-size: 2.5em;
             margin: 0;
-        }
-        .sub-header {
-            font-size: 1.2em;
-            color: #ffcc00;
         }
         nav {
-            background-color: #004d99;
-            padding: 10px;
+            background-color: #004080;
+            padding: 15px;
             text-align: center;
         }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: inline-flex;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
+        nav a {
             color: white;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: 500;
+            font-size: 18px;
         }
-        nav ul li a:hover {
+        nav a:hover {
             text-decoration: underline;
+        }
+        .banner {
+            background-image: url('https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px #000;
         }
         .container {
             padding: 20px;
-            max-width: 1200px;
-            margin: auto;
         }
-        h2 {
-            margin-top: 40px;
-            color: #0073e6;
-        }
-        .laptop-item {
-            display: flex;
-            justify-content: space-between;
+        .services, .products {
             background-color: white;
-            padding: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .laptop-item img {
+        .services h2, .products h2 {
+            color: #0073e6;
+        }
+        .service-item, .product-item {
+            margin-bottom: 15px;
+        }
+        .service-item h3, .product-item h3 {
+            margin: 0 0 10px;
+        }
+        .product-item img {
             width: 150px;
             height: auto;
             margin-right: 20px;
         }
-        .laptop-item .details {
-            flex-grow: 1;
-        }
-        .social-media {
+        .product-details {
             display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .social-media a {
-            margin: 0 10px;
-        }
-        .social-media img {
-            width: 40px;
-            height: 40px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
             align-items: center;
+        }
+        .testimonials {
             background-color: #0073e6;
-            padding: 15px;
             color: white;
-            font-size: 1.2em;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-        .contact-info img {
-            width: 30px;
-            margin-right: 10px;
-        }
-        .address {
+            padding: 40px;
             text-align: center;
-            font-size: 1.1em;
-            margin-top: 20px;
         }
-        .google-link {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        .footer {
+            background-color: #004080;
+            padding: 20px;
+            color: white;
+            text-align: center;
         }
-        .google-link a {
-            font-size: 1.2em;
-            color: #0073e6;
+        .footer a {
+            color: white;
             text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Classic Computer</h1>
-    <p class="sub-header">Used Laptop Store</p>
+    <h1>Classic Computers</h1>
+    <p>Used Laptop Store</p>
+    <p>Call: +91-9550191261 | Email: vallikadhar.shaik@gmail.com</p>
 </header>
 
-<!-- Navigation Menu -->
 <nav>
-    <ul>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#follow-us">Follow Us</a></li>
-    </ul>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
 </nav>
 
-<div class="container" id="products">
-    <h2>Products</h2>
-    <!-- Laptop list -->
-    <div class="laptop-item">
-        <img src="https://m.media-amazon.com/images/I/81UrkSDoJzL._SX679_.jpg" alt="Dell Inspiron 15">
-        <div class="details">
-            <strong>Dell Inspiron 15</strong><br>
-            Intel Core i5, 8GB RAM, 256GB SSD<br>
-            Price: ₹30,000
+<div class="banner">
+    <p>Top Quality Used Laptops</p>
+</div>
+
+<div class="container" id="home">
+    <h2>Welcome to Classic Computers</h2>
+    <p>We offer a wide selection of used laptops that have been thoroughly inspected and tested to ensure they meet our high standards for quality and performance.</p>
+</div>
+
+<div class="container services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <h3>Laptop Sales & Services</h3>
+        <p>Providing quality used laptops with excellent support services.</p>
+    </div>
+    <div class="service-item">
+        <h3>Repair & Maintenance</h3>
+        <p>Expert hardware and software services to keep your device running smoothly.</p>
+    </div>
+    <div class="service-item">
+        <h3>Data Recovery</h3>
+        <p>Reliable data recovery services for accidental data loss.</p>
+    </div>
+</div>
+
+<div class="container products" id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-item">
+        <div class="product-details">
+            <img src="https://m.media-amazon.com/images/I/81UrkSDoJzL._SX679_.jpg" alt="Dell Inspiron">
+            <div>
+                <h3>Dell Inspiron 15</h3>
+                <p>Intel Core i5, 8GB RAM, 256GB SSD | Price: ₹30,000</p>
+                <a href="#">Book Now</a>
+            </div>
         </div>
     </div>
 
-    <div class="laptop-item">
-        <img src="https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg" alt="HP Pavilion x360">
-        <div class="details">
-            <strong>HP Pavilion x360</strong><br>
-            Intel Core i5, 16GB RAM, 512GB SSD<br>
-            Price: ₹45,000
+    <div class="product-item">
+        <div class="product-details">
+            <img src="https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg" alt="HP Pavilion">
+            <div>
+                <h3>HP Pavilion x360</h3>
+                <p>Intel Core i5, 16GB RAM, 512GB SSD | Price: ₹45,000</p>
+                <a href="#">Book Now</a>
+            </div>
         </div>
     </div>
 
-    <!-- Add more laptop items similarly -->
-
-</div>
-
-<div class="container" id="services">
-    <h2>Services We Provide</h2>
-    <ul>
-        <li>Laptop Sales and Services</li>
-        <li>Repair and Maintenance</li>
-        <li>Software Installation and Upgrades</li>
-        <li>Data Recovery Services</li>
-    </ul>
-</div>
-
-<div class="container" id="follow-us">
-    <h2>Follow Us</h2>
-    <!-- Social Media Links -->
-    <div class="social-media">
-        <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-        </a>
-        <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <a href="https://youtube.com/@classic_computers">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
-        </a>
-    </div>
-</div>
-
-<div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <!-- Contact Info -->
-    <div class="contact-info">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        <span>WhatsApp: 95501 91261</span>
-    </div>
-
-    <!-- Address -->
-    <div class="address">
-        136/RT NO.G1, SREE NILAYAM APARTMENTS<br>
-        Opp. 🚨 New Police Station, East Srinivas Nagar Colony<br>
-        Srinivasa Nagar, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038
-    </div>
-
-    <!-- Google Link -->
-    <div class="google-link">
-        <a href="https://g.co/kgs/NcLHYqe">Find us on Google Maps</a>
-    </div>
-</div>
-
-</body>
-</html>
+    <!-- Add more products similarly -->
