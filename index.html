@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Computer - Used Laptop Store</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,8 +14,13 @@
         header {
             text-align: center;
             padding: 20px;
-            background: #0073e6;
+            background: linear-gradient(to right, #0073e6, #00bfff);
             color: white;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         .container {
             max-width: 800px;
@@ -27,7 +31,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #333;
+            color: #0073e6;
         }
         .laptop-list {
             list-style: none;
@@ -36,6 +40,13 @@
         .laptop-item {
             border-bottom: 1px solid #ddd;
             padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-item img {
+            width: 100px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 20px;
         }
         .social-media {
             margin: 10px 0;
@@ -66,39 +77,60 @@
     <h2>Available Laptops:</h2>
     <ul class="laptop-list">
         <li class="laptop-item">
-            <strong>Dell Inspiron 15</strong><br>
-            Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-            Price: ₹30,000
+            <img src="https://via.placeholder.com/100" alt="Dell Inspiron 15">
+            <div>
+                <strong>Dell Inspiron 15</strong><br>
+                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
+                Price: ₹30,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>HP Pavilion x360</strong><br>
-            Configuration: Intel Core i5, 16GB RAM, 512GB SSD<br>
-            Price: ₹45,000
+            <img src="https://via.placeholder.com/100" alt="HP Pavilion x360">
+            <div>
+                <strong>HP Pavilion x360</strong><br>
+                Configuration: Intel Core i5, 16GB RAM, 512GB SSD<br>
+                Price: ₹45,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>Lenovo ThinkPad X1 Carbon</strong><br>
-            Configuration: Intel Core i7, 16GB RAM, 1TB SSD<br>
-            Price: ₹70,000
+            <img src="https://via.placeholder.com/100" alt="Lenovo ThinkPad X1 Carbon">
+            <div>
+                <strong>Lenovo ThinkPad X1 Carbon</strong><br>
+                Configuration: Intel Core i7, 16GB RAM, 1TB SSD<br>
+                Price: ₹70,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>Apple MacBook Air (2019)</strong><br>
-            Configuration: Intel Core i5, 8GB RAM, 128GB SSD<br>
-            Price: ₹50,000
+            <img src="https://via.placeholder.com/100" alt="Apple MacBook Air (2019)">
+            <div>
+                <strong>Apple MacBook Air (2019)</strong><br>
+                Configuration: Intel Core i5, 8GB RAM, 128GB SSD<br>
+                Price: ₹50,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>ASUS VivoBook 14</strong><br>
-            Configuration: AMD Ryzen 5, 8GB RAM, 512GB SSD<br>
-            Price: ₹35,000
+            <img src="https://via.placeholder.com/100" alt="ASUS VivoBook 14">
+            <div>
+                <strong>ASUS VivoBook 14</strong><br>
+                Configuration: AMD Ryzen 5, 8GB RAM, 512GB SSD<br>
+                Price: ₹35,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>Acer Aspire 5</strong><br>
-            Configuration: Intel Core i5, 8GB RAM, 1TB HDD<br>
-            Price: ₹28,000
+            <img src="https://via.placeholder.com/100" alt="Acer Aspire 5">
+            <div>
+                <strong>Acer Aspire 5</strong><br>
+                Configuration: Intel Core i5, 8GB RAM, 1TB HDD<br>
+                Price: ₹28,000
+            </div>
         </li>
         <li class="laptop-item">
-            <strong>Microsoft Surface Laptop 3</strong><br>
-            Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-            Price: ₹65,000
+            <img src="https://via.placeholder.com/100" alt="Microsoft Surface Laptop 3">
+            <div>
+                <strong>Microsoft Surface Laptop 3</strong><br>
+                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
+                Price: ₹65,000
+            </div>
         </li>
     </ul>
 </div>
