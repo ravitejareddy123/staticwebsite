@@ -26,10 +26,36 @@
             font-size: 1.2em;
             color: #ffcc00;
         }
+        nav {
+            background-color: #004d99;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
         .container {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #0073e6;
         }
         .laptop-item {
             display: flex;
@@ -99,7 +125,18 @@
     <p class="sub-header">Used Laptop Store</p>
 </header>
 
-<div class="container">
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#follow-us">Follow Us</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="products">
+    <h2>Products</h2>
     <!-- Laptop list -->
     <div class="laptop-item">
         <img src="https://m.media-amazon.com/images/I/81UrkSDoJzL._SX679_.jpg" alt="Dell Inspiron 15">
@@ -121,6 +158,20 @@
 
     <!-- Add more laptop items similarly -->
 
+</div>
+
+<div class="container" id="services">
+    <h2>Services We Provide</h2>
+    <ul>
+        <li>Laptop Sales and Services</li>
+        <li>Repair and Maintenance</li>
+        <li>Software Installation and Upgrades</li>
+        <li>Data Recovery Services</li>
+    </ul>
+</div>
+
+<div class="container" id="follow-us">
+    <h2>Follow Us</h2>
     <!-- Social Media Links -->
     <div class="social-media">
         <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">
@@ -133,7 +184,10 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
     </div>
+</div>
 
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
     <!-- Contact Info -->
     <div class="contact-info">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
