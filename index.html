@@ -6,32 +6,41 @@
     <title>Classic Computers</title>
     <style>
         body {
-            background-color: #f0f0f0;
+            background-color: #eaeaea;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
 
         h1 {
             text-align: center;
-            color: #333333;
+            color: #4CAF50;
+            font-size: 36px;
+            margin-top: 20px;
         }
 
         p {
             text-align: center;
-            color: #666666;
+            color: #666;
+            margin: 5px 0;
         }
 
         img {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
         }
 
         .store-info {
             text-align: center;
-            margin-top: 20px;
-        }
-
-        .store-info p {
-            margin-bottom: 0;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .product-list {
@@ -42,23 +51,32 @@
         }
 
         .product {
-            background-color: white;
+            background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 10px;
             margin: 15px;
             padding: 20px;
             text-align: center;
             width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         .product img {
             width: 200px;
             height: 150px;
+            border-radius: 5px;
         }
 
         .product h2 {
             font-size: 18px;
             margin: 10px 0;
+            color: #4CAF50;
         }
 
         .product p {
@@ -69,6 +87,17 @@
         .product .price {
             color: #4CAF50;
             font-weight: bold;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .product {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
