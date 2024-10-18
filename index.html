@@ -4,102 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Computer - Used Laptop Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 20px;
+            background-color: #f8f8f8;
         }
         header {
-            text-align: center;
+            background-color: #0073e6;
             padding: 20px;
-            background: linear-gradient(to right, #0073e6, #00bfff);
+            text-align: center;
             color: white;
         }
-        h1 {
-            color: #fff;
+        header h1 {
+            font-weight: 500;
             font-size: 2.5em;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin: 0;
         }
         .sub-header {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #ffcc00;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: auto;
         }
-        h2 {
-            color: #0073e6;
+        .laptop-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .laptop-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .laptop-item .details {
+            flex-grow: 1;
         }
         .social-media {
-            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
         .social-media a {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+            margin: 0 10px;
         }
         .social-media img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+            width: 40px;
+            height: 40px;
         }
-        .whatsapp-contact {
+        .contact-info {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #0073e6;
+            padding: 15px;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 8px;
             margin-top: 10px;
         }
-        .whatsapp-contact img {
+        .contact-info img {
             width: 30px;
-            height: 30px;
             margin-right: 10px;
         }
         .address {
             text-align: center;
-            margin-top: 15px;
-            color: #333;
-            font-size: 14px;
-        }
-        .address a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        .laptop-list {
-            list-style: none;
-            padding: 0;
-        }
-        .laptop-item {
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #ddd;
-            padding: 20px 0;
-        }
-        .laptop-item img {
-            width: 100px;
-            height: auto;
-            margin-right: 20px;
+            font-size: 1.1em;
+            margin-top: 20px;
         }
         .google-link {
             display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .google-link img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+            justify-content: center;
+            margin: 20px 0;
         }
         .google-link a {
-            color: #333;
+            font-size: 1.2em;
+            color: #0073e6;
             text-decoration: none;
-            font-size: 16px;
         }
     </style>
 </head>
@@ -110,98 +99,57 @@
     <p class="sub-header">Used Laptop Store</p>
 </header>
 
-<div class="whatsapp-contact">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    <span>WhatsApp: <strong>+919550191261</strong></span>
-</div>
-
-<div class="address">
-    <p>136/RT NO.G1, SREE NILAYAM APARTMENTS</p>
-    <p>Landmark: Opp. 🚨 New Police Station, East Srinivas Nagar Colony</p>
-    <p>Srinivasa Nagar, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p>
-    <p><a href="https://g.co/kgs/NcLHYqe" target="_blank">Find us on Google Maps</a></p>
-</div>
-
 <div class="container">
-    <h2>Follow Us:</h2>
+    <!-- Laptop list -->
+    <div class="laptop-item">
+        <img src="https://m.media-amazon.com/images/I/81UrkSDoJzL._SX679_.jpg" alt="Dell Inspiron 15">
+        <div class="details">
+            <strong>Dell Inspiron 15</strong><br>
+            Intel Core i5, 8GB RAM, 256GB SSD<br>
+            Price: ₹30,000
+        </div>
+    </div>
+
+    <div class="laptop-item">
+        <img src="https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg" alt="HP Pavilion x360">
+        <div class="details">
+            <strong>HP Pavilion x360</strong><br>
+            Intel Core i5, 16GB RAM, 512GB SSD<br>
+            Price: ₹45,000
+        </div>
+    </div>
+
+    <!-- Add more laptop items similarly -->
+
+    <!-- Social Media Links -->
     <div class="social-media">
         <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-            Facebook@ https://www.facebook.com/villagemirror143?mibextid=ZbWKwL
         </a>
         <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            Instagram@ https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=
         </a>
         <a href="https://youtube.com/@classic_computers">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
-            YouTube@ https://youtube.com/@classic_computers
         </a>
     </div>
 
-    <h2>Available Laptops:</h2>
-    <ul class="laptop-list">
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/81UrkSDoJzL._SX679_.jpg" alt="Dell Inspiron 15">
-            <div>
-                <strong>Dell Inspiron 15</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-                Price: ₹30,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg" alt="HP Pavilion x360">
-            <div>
-                <strong>HP Pavilion x360</strong><br>
-                Configuration: Intel Core i5, 16GB RAM, 512GB SSD<br>
-                Price: ₹45,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/81gCgPhtn2S._SX679_.jpg" alt="Lenovo ThinkPad X1 Carbon">
-            <div>
-                <strong>Lenovo ThinkPad X1 Carbon</strong><br>
-                Configuration: Intel Core i7, 16GB RAM, 1TB SSD<br>
-                Price: ₹70,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/71NG5loz+xL._SX679_.jpg" alt="Apple MacBook Air (2019)">
-            <div>
-                <strong>Apple MacBook Air (2019)</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 128GB SSD<br>
-                Price: ₹50,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/81Ne5qkmSpL._SX679_.jpg" alt="ASUS VivoBook 14">
-            <div>
-                <strong>ASUS VivoBook 14</strong><br>
-                Configuration: AMD Ryzen 5, 8GB RAM, 512GB SSD<br>
-                Price: ₹35,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/71NxAT7dnQL._SX679_.jpg" alt="Acer Aspire 5">
-            <div>
-                <strong>Acer Aspire 5</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 1TB HDD<br>
-                Price: ₹28,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://m.media-amazon.com/images/I/71jWj-2xMXL._SX679_.jpg" alt="Microsoft Surface Laptop 3">
-            <div>
-                <strong>Microsoft Surface Laptop 3</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-                Price: ₹65,000
-            </div>
-        </li>
-    </ul>
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span>WhatsApp: 95501 91261</span>
+    </div>
 
+    <!-- Address -->
+    <div class="address">
+        136/RT NO.G1, SREE NILAYAM APARTMENTS<br>
+        Opp. 🚨 New Police Station, East Srinivas Nagar Colony<br>
+        Srinivasa Nagar, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038
+    </div>
+
+    <!-- Google Link -->
     <div class="google-link">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google">
-        <a href="https://g.co/kgs/NcLHYqe">Find us on Google</a>
+        <a href="https://g.co/kgs/NcLHYqe">Find us on Google Maps</a>
     </div>
 </div>
 
