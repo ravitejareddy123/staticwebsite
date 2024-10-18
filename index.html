@@ -33,21 +33,6 @@
         h2 {
             color: #0073e6;
         }
-        .laptop-list {
-            list-style: none;
-            padding: 0;
-        }
-        .laptop-item {
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-        .laptop-item img {
-            width: 100px; /* Adjust the size as needed */
-            height: auto;
-            margin-right: 20px;
-        }
         .social-media {
             margin: 10px 0;
         }
@@ -55,6 +40,20 @@
             width: 30px;
             height: 30px;
             margin: 0 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #0073e6;
+            color: white;
         }
     </style>
 </head>
@@ -75,64 +74,76 @@
     </div>
 
     <h2>Available Laptops:</h2>
-    <ul class="laptop-list">
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="Dell Inspiron 15">
-            <div>
-                <strong>Dell Inspiron 15</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-                Price: ₹30,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="HP Pavilion x360">
-            <div>
-                <strong>HP Pavilion x360</strong><br>
-                Configuration: Intel Core i5, 16GB RAM, 512GB SSD<br>
-                Price: ₹45,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="Lenovo ThinkPad X1 Carbon">
-            <div>
-                <strong>Lenovo ThinkPad X1 Carbon</strong><br>
-                Configuration: Intel Core i7, 16GB RAM, 1TB SSD<br>
-                Price: ₹70,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="Apple MacBook Air (2019)">
-            <div>
-                <strong>Apple MacBook Air (2019)</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 128GB SSD<br>
-                Price: ₹50,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="ASUS VivoBook 14">
-            <div>
-                <strong>ASUS VivoBook 14</strong><br>
-                Configuration: AMD Ryzen 5, 8GB RAM, 512GB SSD<br>
-                Price: ₹35,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="Acer Aspire 5">
-            <div>
-                <strong>Acer Aspire 5</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 1TB HDD<br>
-                Price: ₹28,000
-            </div>
-        </li>
-        <li class="laptop-item">
-            <img src="https://via.placeholder.com/100" alt="Microsoft Surface Laptop 3">
-            <div>
-                <strong>Microsoft Surface Laptop 3</strong><br>
-                Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
-                Price: ₹65,000
-            </div>
-        </li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Laptop Name</th>
+                <th>Model</th>
+                <th>Configuration</th>
+                <th>SSD</th>
+                <th>RAM</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dell Inspiron</td>
+                <td>15</td>
+                <td>Intel Core i5</td>
+                <td>256GB</td>
+                <td>8GB</td>
+                <td>₹30,000</td>
+            </tr>
+            <tr>
+                <td>HP Pavilion</td>
+                <td>x360</td>
+                <td>Intel Core i5</td>
+                <td>512GB</td>
+                <td>16GB</td>
+                <td>₹45,000</td>
+            </tr>
+            <tr>
+                <td>Lenovo ThinkPad</td>
+                <td>X1 Carbon</td>
+                <td>Intel Core i7</td>
+                <td>1TB</td>
+                <td>16GB</td>
+                <td>₹70,000</td>
+            </tr>
+            <tr>
+                <td>Apple MacBook</td>
+                <td>Air (2019)</td>
+                <td>Intel Core i5</td>
+                <td>128GB</td>
+                <td>8GB</td>
+                <td>₹50,000</td>
+            </tr>
+            <tr>
+                <td>ASUS VivoBook</td>
+                <td>14</td>
+                <td>AMD Ryzen 5</td>
+                <td>512GB</td>
+                <td>8GB</td>
+                <td>₹35,000</td>
+            </tr>
+            <tr>
+                <td>Acer Aspire</td>
+                <td>5</td>
+                <td>Intel Core i5</td>
+                <td>1TB</td>
+                <td>8GB</td>
+                <td>₹28,000</td>
+            </tr>
+            <tr>
+                <td>Microsoft Surface</td>
+                <td>Laptop 3</td>
+                <td>Intel Core i5</td>
+                <td>256GB</td>
+                <td>8GB</td>
+                <td>₹65,000</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
