@@ -3,136 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Computers</title>
+    <title>Classic Computer - Used Laptop Store</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #eaeaea;
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #0073e6;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
             color: #333;
-            border: 10px solid white; /* White border around the body */
-            box-sizing: border-box; /* Include border in the element's total width and height */
         }
-
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-            font-size: 36px;
-            margin-top: 20px;
+        .laptop-list {
+            list-style: none;
+            padding: 0;
         }
-
-        p {
-            text-align: center;
-            color: #666;
-            margin: 5px 0;
+        .laptop-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
         }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .store-info {
-            text-align: center;
-            margin: 20px 0;
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-
-        .product {
-            background-color: #ffffff;
-            border: 2px solid white; /* White border for product cards */
-            border-radius: 10px;
-            margin: 15px;
-            padding: 20px;
-            text-align: center;
-            width: 250px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .product:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .product img {
-            width: 200px;
-            height: 150px;
-            border-radius: 5px;
-        }
-
-        .product h2 {
-            font-size: 18px;
+        .social-media {
             margin: 10px 0;
-            color: #4CAF50;
         }
-
-        .product p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .product .price {
-            color: #4CAF50;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        @media (max-width: 600px) {
-            .product {
-                width: 90%;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
         }
     </style>
 </head>
 <body>
-<h1>Classic Computers</h1>
-<p>A Renewed Laptops & Desktops Sale</p>
 
-<img src="image.jpg" alt="Classic Computers store">
+<header>
+    <h1>Classic Computer</h1>
+    <p>No. GT, Sree Nilayam Apartments, Opp. S.R Nagar New Police Station, Hyderabad - 500038</p>
+    <p>Contact: <strong>95501 91261</strong></p>
+</header>
 
-<div class="store-info">
-    <p>Used Laptops Store</p>
-    <p>Lenovo, Dell, Acer, Compaq, Asus</p>
-    <p>No.GT. Sree Nilayam Apartments Landmark, Opp. S.R Nagar</p>
-    <p>New Police Station, Hyderabad - 500038</p>
-    <p>Contact: 95501 91261</p>
-</div>
-
-<div class="product-list">
-    <!-- Laptop 1: HP EliteBook Ryzen 5 Pro -->
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1588422333073-a05f949bfa77" alt="HP EliteBook Ryzen 5 Pro">
-        <h2>HP EliteBook Ryzen 5 Pro</h2>
-        <p>Ryzen 5 Pro, 8GB RAM, 512GB SSD</p>
-        <p class="price">₹19,000</p>
+<div class="container">
+    <h2>Follow Us:</h2>
+    <div class="social-media">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
     </div>
 
-    <!-- Laptop 2: HP EliteBook i5 8th Gen -->
-    <div class="product">
-        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="HP EliteBook i5 8th Gen">
-        <h2>HP EliteBook i5 8th Gen</h2>
-        <p>Intel i5 8th Gen, 8GB RAM, 256GB SSD</p>
-        <p class="price">₹25,000</p>
-    </div>
+    <h2>Available Laptops:</h2>
+    <ul class="laptop-list">
+        <li class="laptop-item">
+            <strong>Dell Inspiron 15</strong><br>
+            Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
+            Price: ₹30,000
+        </li>
+        <li class="laptop-item">
+            <strong>HP Pavilion x360</strong><br>
+            Configuration: Intel Core i5, 16GB RAM, 512GB SSD<br>
+            Price: ₹45,000
+        </li>
+        <li class="laptop-item">
+            <strong>Lenovo ThinkPad X1 Carbon</strong><br>
+            Configuration: Intel Core i7, 16GB RAM, 1TB SSD<br>
+            Price: ₹70,000
+        </li>
+        <li class="laptop-item">
+            <strong>Apple MacBook Air (2019)</strong><br>
+            Configuration: Intel Core i5, 8GB RAM, 128GB SSD<br>
+            Price: ₹50,000
+        </li>
+        <li class="laptop-item">
+            <strong>ASUS VivoBook 14</strong><br>
+            Configuration: AMD Ryzen 5, 8GB RAM, 512GB SSD<br>
+            Price: ₹35,000
+        </li>
+        <li class="laptop-item">
+            <strong>Acer Aspire 5</strong><br>
+            Configuration: Intel Core i5, 8GB RAM, 1TB HDD<br>
+            Price: ₹28,000
+        </li>
+        <li class="laptop-item">
+            <strong>Microsoft Surface Laptop 3</strong><br>
+            Configuration: Intel Core i5, 8GB RAM, 256GB SSD<br>
+            Price: ₹65,000
+        </li>
+    </ul>
 </div>
 
 </body>
