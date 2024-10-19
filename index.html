@@ -3,238 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Computer - Used Laptop Store</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #0073e6; /* Header color */
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #005bb5; /* Navigation color */
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .banner {
-            background-image: url('https://m.media-amazon.com/images/I/61VZq5A9LEL._SX679_.jpg');
-            background-size: cover;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px #000;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .services, .products {
-            background-color: white;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .services h2, .products h2 {
-            color: #0073e6; /* Section title color */
-        }
-        .service-item {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        .service-item img {
-            width: 100px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .testimonials {
-            background-color: #0073e6; /* Testimonial section color */
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        .footer {
-            background-color: #005bb5; /* Footer color */
-            padding: 20px;
-            color: white;
-            text-align: center;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            background-color: #0073e6; /* Contact info section color */
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin: 20px 0;
-        }
-        .google-link {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .google-link a {
-            color: #005bb5; /* Google link color */
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Classic Computers - Used Laptop Store</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Google Font -->
 </head>
 <body>
 
 <header>
-    <h1>Classic Computers</h1>
-    <p>Used Laptop Store</p>
-    <p>Call: +91-9550191261 | Email: villagemirror143@gmail.com</p>
+    <div class="container header-container">
+        <h1>Classic Computers</h1>
+        <p class="tagline">Your Trusted Source for Used Laptops</p>
+        <div class="contact-info">
+            <p><img src="whatsapp-icon.png" alt="WhatsApp" width="16"> +91-9550191261 | Email: <a href="mailto:villagemirror143@gmail.com">villagemirror143@gmail.com</a></p>
+        </div>
+    </div>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#products">Products</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact Us</a>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
 </nav>
 
 <div class="banner">
-    <p>Top Quality Used Laptops</p>
+    <h2>Top Quality Used Laptops</h2>
+    <p>Thoroughly inspected, high-performance laptops for all your needs</p>
 </div>
 
-<div class="container" id="home">
+<section id="home" class="container">
     <h2>Welcome to Classic Computers</h2>
-    <p>We offer a wide selection of used laptops that have been thoroughly inspected and tested to ensure they meet our high standards for quality and performance.</p>
-</div>
+    <p>At Classic Computers, we offer a wide selection of used laptops that are rigorously tested for quality and performance. Whether you're a student, professional, or gamer, we have the right laptop for you.</p>
+</section>
 
-<div class="container services" id="services">
+<section id="services" class="container services">
     <h2>Our Services</h2>
-    
     <div class="service-item">
         <img src="https://pnrtechnologies.in/images/laptop_sales.jpg" alt="Laptop Sales">
         <div>
             <h3>Laptop Sales</h3>
-            <p>We provide a wide range of high-quality used laptops. Each laptop undergoes rigorous testing to ensure top performance.</p>
+            <p>Choose from a wide range of high-quality used laptops. Each laptop undergoes rigorous testing to ensure top performance.</p>
         </div>
     </div>
-    
+
     <div class="service-item">
         <img src="https://pnrtechnologies.in/images/laptop_repair.jpg" alt="Repair & Maintenance">
         <div>
             <h3>Repair & Maintenance</h3>
-            <p>Our expert technicians provide reliable laptop repair and maintenance services to keep your device running smoothly.</p>
+            <p>Our expert technicians offer reliable laptop repair and maintenance services to keep your device running smoothly.</p>
         </div>
     </div>
-    
+
     <div class="service-item">
         <img src="https://pnrtechnologies.in/images/data_recovery.jpg" alt="Data Recovery">
         <div>
             <h3>Data Recovery</h3>
-            <p>We offer professional data recovery services to retrieve your important files from damaged or corrupted devices.</p>
+            <p>We provide professional data recovery services to retrieve important files from damaged or corrupted devices.</p>
         </div>
     </div>
-    
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/software_installation.jpg" alt="Software Installation">
-        <div>
-            <h3>Software Installation</h3>
-            <p>We install operating systems, applications, and any software you need to ensure your laptop is ready for use.</p>
-        </div>
-    </div>
-    
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/upgrades.jpg" alt="Laptop Upgrades">
-        <div>
-            <h3>Laptop Upgrades</h3>
-            <p>Enhance your laptop's performance with our upgrade services, including RAM and SSD upgrades.</p>
-        </div>
-    </div>
-    
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/troubleshooting.jpg" alt="Troubleshooting">
-        <div>
-            <h3>Troubleshooting</h3>
-            <p>Our team provides expert troubleshooting services to identify and resolve issues quickly and efficiently.</p>
-        </div>
-    </div>
-</div>
+</section>
 
-<div class="container products" id="products">
+<section id="products" class="container products">
     <h2>Featured Products</h2>
 
     <div class="product-item">
+        <img src="https://pnrtechnologies.in/images/dell_inspiron.jpg" alt="Dell Inspiron">
         <div class="product-details">
-            <img src="https://pnrtechnologies.in/images/dell_inspiron.jpg" alt="Dell Inspiron">
-            <div>
-                <h3>Dell Inspiron 15</h3>
-                <p>Intel Core i5, 8GB RAM, 256GB SSD | Price: ₹30,000</p>
-                <a href="#">Book Now</a>
-            </div>
+            <h3>Dell Inspiron 15</h3>
+            <p>Intel Core i5, 8GB RAM, 256GB SSD | Price: ₹30,000</p>
+            <a href="#">Book Now</a>
         </div>
     </div>
 
     <div class="product-item">
+        <img src="https://pnrtechnologies.in/images/hp_pavilion.jpg" alt="HP Pavilion">
         <div class="product-details">
-            <img src="https://pnrtechnologies.in/images/hp_pavilion.jpg" alt="HP Pavilion">
-            <div>
-                <h3>HP Pavilion x360</h3>
-                <p>Intel Core i5, 16GB RAM, 512GB SSD | Price: ₹45,000</p>
-                <a href="#">Book Now</a>
-            </div>
+            <h3>HP Pavilion x360</h3>
+            <p>Intel Core i5, 16GB RAM, 512GB SSD | Price: ₹45,000</p>
+            <a href="#">Book Now</a>
         </div>
     </div>
+</section>
 
-    <!-- Add more products similarly -->
-</div>
-
-<div class="container testimonials">
-    <h2>What Our Clients Say</h2>
-    <p>"Great service and quality products! Highly recommend Classic Computers!"</p>
-</div>
-
-<div class="container contact-info" id="contact">
+<section id="contact" class="container contact-info">
     <h2>Contact Us</h2>
-    <p>WhatsApp: +91-9550191261</p>
-    <p>Email: villagemirror143@gmail.com</p>
-    <p>Address: 136/RT NO.G1, SREE NILAYAM APARTMENTS, Opp. 🚨 New Police Station, East Srinivas Nagar Colony, Srinivasa Nagar, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p>
-</div>
+    <p><strong>WhatsApp:</strong> +91-9550191261</p>
+    <p><strong>Email:</strong> <a href="mailto:villagemirror143@gmail.com">villagemirror143@gmail.com</a></p>
+    <p><strong>Address:</strong> 136/RT NO.G1, SREE NILAYAM APARTMENTS, Opp. 🚨 New Police Station, East Srinivas Nagar Colony, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p>
+    <a class="google-link" href="https://g.co/kgs/NcLHYqe">Find us on Google Maps</a>
+</section>
 
-<div class="google-link">
-    <a href="https://g.co/kgs/NcLHYqe">Find us on Google Maps</a>
-</div>
-
-<div class="footer">
-    <p>© 2024 Classic Computers, All Rights Reserved. <a href="#">Privacy Policy</a></p>
-    <div class="social-media">
-        <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">Facebook</a> |
-        <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=">Instagram</a> |
-        <a href="https://youtube.com/@classic_computers">YouTube</a>
+<footer>
+    <div class="container footer-container">
+        <p>&copy; 2024 Classic Computers, All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">Facebook</a> |
+            <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=">Instagram</a> |
+            <a href="https://youtube.com/@classic_computers">YouTube</a>
+        </div>
     </div>
-</div>
+</footer>
 
 </body>
 </html>
