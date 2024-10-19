@@ -4,108 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Computers - Used Laptop Store</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <style>
+        /* General CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .contact-info {
+            font-size: 14px;
+        }
+
+        .contact-info img {
+            vertical-align: middle;
+            width: 16px;
+            margin-right: 5px;
+        }
+
+        /* Section for laptops */
+        #laptops {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #laptops h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .laptop-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .laptop-item {
+            background-color: #ecf0f1;
+            padding: 15px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .laptop-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .laptop-item p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .laptop-item strong {
+            color: #2c3e50;
+        }
+
+        .laptop-item p:last-child {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 
-<header>
-    <div class="container header-container">
-        <h1>Classic Computers</h1>
-        <p class="tagline">Your Trusted Source for Used Laptops</p>
+    <!-- Header with Logo and Contact Information -->
+    <header>
+        <div class="logo-container">
+            <img src="images/your-logo.png" alt="Classic Computers Logo" class="logo">
+            <h1>Classic Computers</h1>
+        </div>
         <div class="contact-info">
-            <p><img src="whatsapp-icon.png" alt="WhatsApp" width="16"> +91-9550191261 | Email: <a href="mailto:villagemirror143@gmail.com">villagemirror143@gmail.com</a></p>
+            <p>
+                <img src="images/whatsapp-icon.png" alt="WhatsApp"> +91-9550191261 | Email: <a href="mailto:villagemirror143@gmail.com" style="color: white;">villagemirror143@gmail.com</a>
+            </p>
         </div>
-    </div>
-</header>
+    </header>
 
-<nav>
-    <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-    </ul>
-</nav>
-
-<div class="banner">
-    <h2>Top Quality Used Laptops</h2>
-    <p>Thoroughly inspected, high-performance laptops for all your needs</p>
-</div>
-
-<section id="home" class="container">
-    <h2>Welcome to Classic Computers</h2>
-    <p>At Classic Computers, we offer a wide selection of used laptops that are rigorously tested for quality and performance. Whether you're a student, professional, or gamer, we have the right laptop for you.</p>
-</section>
-
-<section id="services" class="container services">
-    <h2>Our Services</h2>
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/laptop_sales.jpg" alt="Laptop Sales">
-        <div>
-            <h3>Laptop Sales</h3>
-            <p>Choose from a wide range of high-quality used laptops. Each laptop undergoes rigorous testing to ensure top performance.</p>
+    <!-- Available Laptops Section -->
+    <section id="laptops">
+        <h2>Available Laptops</h2>
+        <div class="laptop-list">
+            <!-- Laptop 1 -->
+            <div class="laptop-item">
+                <h3>Dell 7490</h3>
+                <p><strong>Processor:</strong> i5 8th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹21,000</p>
+            </div>
+            <!-- Laptop 2 -->
+            <div class="laptop-item">
+                <h3>Dell 7490</h3>
+                <p><strong>Processor:</strong> i5 8th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> Yes</p>
+                <p><strong>Price:</strong> ₹23,000</p>
+            </div>
+            <!-- Laptop 3 -->
+            <div class="laptop-item">
+                <h3>Dell 7490</h3>
+                <p><strong>Processor:</strong> i5 8th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> Yes</p>
+                <p><strong>Price:</strong> ₹23,000</p>
+            </div>
+            <!-- Add more laptops here... -->
+            <div class="laptop-item">
+                <h3>HP Elitebook 745 G6</h3>
+                <p><strong>Processor:</strong> Ryzen 5 Pro</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹18,000</p>
+            </div>
+            <!-- Add more laptop data as per your requirement -->
         </div>
-    </div>
+    </section>
 
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/laptop_repair.jpg" alt="Repair & Maintenance">
-        <div>
-            <h3>Repair & Maintenance</h3>
-            <p>Our expert technicians offer reliable laptop repair and maintenance services to keep your device running smoothly.</p>
-        </div>
-    </div>
-
-    <div class="service-item">
-        <img src="https://pnrtechnologies.in/images/data_recovery.jpg" alt="Data Recovery">
-        <div>
-            <h3>Data Recovery</h3>
-            <p>We provide professional data recovery services to retrieve important files from damaged or corrupted devices.</p>
-        </div>
-    </div>
-</section>
-
-<section id="products" class="container products">
-    <h2>Featured Products</h2>
-
-    <div class="product-item">
-        <img src="https://pnrtechnologies.in/images/dell_inspiron.jpg" alt="Dell Inspiron">
-        <div class="product-details">
-            <h3>Dell Inspiron 15</h3>
-            <p>Intel Core i5, 8GB RAM, 256GB SSD | Price: ₹30,000</p>
-            <a href="#">Book Now</a>
-        </div>
-    </div>
-
-    <div class="product-item">
-        <img src="https://pnrtechnologies.in/images/hp_pavilion.jpg" alt="HP Pavilion">
-        <div class="product-details">
-            <h3>HP Pavilion x360</h3>
-            <p>Intel Core i5, 16GB RAM, 512GB SSD | Price: ₹45,000</p>
-            <a href="#">Book Now</a>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="container contact-info">
-    <h2>Contact Us</h2>
-    <p><strong>WhatsApp:</strong> +91-9550191261</p>
-    <p><strong>Email:</strong> <a href="mailto:villagemirror143@gmail.com">villagemirror143@gmail.com</a></p>
-    <p><strong>Address:</strong> 136/RT NO.G1, SREE NILAYAM APARTMENTS, Opp. 🚨 New Police Station, East Srinivas Nagar Colony, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p>
-    <a class="google-link" href="https://g.co/kgs/NcLHYqe">Find us on Google Maps</a>
-</section>
-
-<footer>
-    <div class="container footer-container">
-        <p>&copy; 2024 Classic Computers, All Rights Reserved. | <a href="#">Privacy Policy</a></p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL">Facebook</a> |
-            <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=">Instagram</a> |
-            <a href="https://youtube.com/@classic_computers">YouTube</a>
-        </div>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Classic Computers - All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
