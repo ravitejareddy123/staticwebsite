@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Computers - Used Laptop Store</title>
     <style>
-        /* General CSS styling */
+        /* General styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
+            color: #333;
         }
 
         header {
             background-color: #2c3e50;
             color: white;
-            padding: 15px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 1.2em;
         }
 
         .logo-container {
@@ -28,89 +30,102 @@
         }
 
         .logo {
-            width: 50px;
-            margin-right: 10px;
+            width: 60px;
+            margin-right: 15px;
         }
 
         .logo-container h1 {
-            font-size: 24px;
+            font-size: 28px;
             margin: 0;
+            font-weight: 700;
         }
 
         .contact-info {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .contact-info img {
             vertical-align: middle;
-            width: 16px;
-            margin-right: 5px;
+            width: 20px;
+            margin-right: 8px;
         }
 
-        /* Section for laptops */
+        /* Styling for laptop section */
         #laptops {
-            margin: 50px auto;
-            padding: 20px;
+            padding: 50px 20px;
             max-width: 1200px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
         }
 
         #laptops h2 {
             text-align: center;
-            font-size: 28px;
-            margin-bottom: 20px;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #34495e;
+            font-weight: 700;
         }
 
         .laptop-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
             justify-content: space-around;
         }
 
         .laptop-item {
-            background-color: #ecf0f1;
-            padding: 15px;
+            background-color: #ffffff;
+            padding: 20px;
             width: 300px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #3498db;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .laptop-item:hover {
+            transform: scale(1.05);
         }
 
         .laptop-item h3 {
-            font-size: 20px;
+            font-size: 22px;
+            color: #2c3e50;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .laptop-item p {
-            margin: 5px 0;
-            font-size: 14px;
+            font-size: 16px;
+            color: #7f8c8d;
+            margin: 8px 0;
         }
 
-        .laptop-item strong {
-            color: #2c3e50;
+        .laptop-item p strong {
+            color: #34495e;
         }
 
         .laptop-item p:last-child {
+            font-size: 20px;
             font-weight: bold;
             color: #e74c3c;
         }
 
         footer {
-            margin-top: 50px;
-            padding: 10px;
-            text-align: center;
             background-color: #2c3e50;
+            padding: 20px;
             color: white;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Header with Logo and Contact Information -->
+    <!-- Header Section -->
     <header>
         <div class="logo-container">
             <img src="images/your-logo.png" alt="Classic Computers Logo" class="logo">
@@ -125,7 +140,7 @@
 
     <!-- Available Laptops Section -->
     <section id="laptops">
-        <h2>Available Laptops</h2>
+        <h2>Top Quality Used Laptops</h2>
         <div class="laptop-list">
             <!-- Laptop 1 -->
             <div class="laptop-item">
@@ -154,7 +169,79 @@
                 <p><strong>Touchscreen:</strong> Yes</p>
                 <p><strong>Price:</strong> ₹23,000</p>
             </div>
-            <!-- Add more laptops here... -->
+            <!-- Laptop 4 -->
+            <div class="laptop-item">
+                <h3>Dell 5400</h3>
+                <p><strong>Processor:</strong> i5 8th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹21,000</p>
+            </div>
+            <!-- Laptop 5 -->
+            <div class="laptop-item">
+                <h3>Dell 5420</h3>
+                <p><strong>Processor:</strong> i5 11th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹30,000</p>
+            </div>
+            <!-- Laptop 6 -->
+            <div class="laptop-item">
+                <h3>Dell 5410</h3>
+                <p><strong>Processor:</strong> i5 10th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹26,000</p>
+            </div>
+            <!-- Laptop 7 -->
+            <div class="laptop-item">
+                <h3>Dell 5280</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹15,000</p>
+            </div>
+            <!-- Laptop 8 -->
+            <div class="laptop-item">
+                <h3>Dell 5290</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹15,000</p>
+            </div>
+            <!-- Laptop 9 -->
+            <div class="laptop-item">
+                <h3>Dell 5480</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹15,000</p>
+            </div>
+            <!-- Laptop 10 -->
+            <div class="laptop-item">
+                <h3>Lenovo L460</h3>
+                <p><strong>Processor:</strong> i5 6th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹12,000</p>
+            </div>
+            <!-- Laptop 11 -->
+            <div class="laptop-item">
+                <h3>Lenovo L470</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹15,000</p>
+            </div>
+            <!-- Laptop 12 -->
             <div class="laptop-item">
                 <h3>HP Elitebook 745 G6</h3>
                 <p><strong>Processor:</strong> Ryzen 5 Pro</p>
@@ -163,11 +250,55 @@
                 <p><strong>Touchscreen:</strong> No</p>
                 <p><strong>Price:</strong> ₹18,000</p>
             </div>
-            <!-- Add more laptop data as per your requirement -->
+            <!-- Laptop 13 -->
+            <div class="laptop-item">
+                <h3>HP Elitebook 840 G5</h3>
+                <p><strong>Processor:</strong> i5 8th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 512 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹26,000</p>
+            </div>
+            <!-- Laptop 14 -->
+            <div class="laptop-item">
+                <h3>HP 840 G3</h3>
+                <p><strong>Processor:</strong> i5 6th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹16,000</p>
+            </div>
+            <!-- Laptop 15 -->
+            <div class="laptop-item">
+                <h3>HP 840 G4</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹18,000</p>
+            </div>
+            <!-- Laptop 16 -->
+            <div class="laptop-item">
+                <h3>HP ProBook 440 G5</h3>
+                <p><strong>Processor:</strong> i5 7th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹20,000</p>
+            </div>
+            <!-- Laptop 17 -->
+            <div class="laptop-item">
+                <h3>Lenovo X270</h3>
+                <p><strong>Processor:</strong> i5 6th Gen</p>
+                <p><strong>RAM:</strong> 8 GB</p>
+                <p><strong>Storage:</strong> 256 GB SSD</p>
+                <p><strong>Touchscreen:</strong> No</p>
+                <p><strong>Price:</strong> ₹18,000</p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
         <p>© 2024 Classic Computers - All Rights Reserved</p>
     </footer>
