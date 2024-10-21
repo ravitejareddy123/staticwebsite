@@ -48,6 +48,30 @@
             color: #f39c12;
         }
 
+        /* Up Arrow */
+        .up-arrow {
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+        }
+
+        .up-arrow::before {
+            content: '\2191'; /* Unicode arrow symbol */
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .up-arrow:hover {
+            background-color: #f39c12;
+            border-color: #f39c12;
+        }
+
         /* Sidebar Social Links */
         .social-sidebar {
             position: fixed;
@@ -203,7 +227,7 @@
     </style>
 </head>
 <body>
-
+    
     <!-- Sidebar Social Links (Sticky) -->
     <div class="social-sidebar">
         <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL" target="_blank">
@@ -225,6 +249,7 @@
         <ul>
             <li><a href="#laptops">Laptops</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#top" class="up-arrow"></a></li>
         </ul>
     </nav>
 
