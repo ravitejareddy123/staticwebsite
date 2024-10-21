@@ -12,52 +12,78 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            scroll-behavior: smooth;
         }
 
-        /* Header Styling */
+        /* Navigation Bar */
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Sidebar Social Links */
+        .social-sidebar {
+            position: fixed;
+            top: 20%;
+            left: 10px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-sidebar a {
+            margin-bottom: 10px;
+        }
+
+        .social-sidebar img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-sidebar img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Header Section */
         header {
             background-color: #2c3e50;
             color: white;
-            padding: 10px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Top Bar with Social Links */
-        .social-links {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 100%;
-            background-color: #34495e;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .social-links a {
-            margin-left: 10px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .social-links img {
-            width: 24px;
-            height: 24px;
-            vertical-align: middle;
+            padding: 20px;
+            text-align: center;
         }
 
         /* Contact Info */
         .contact-info {
-            text-align: right;
             font-size: 14px;
-            margin: 10px 0;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
+            text-align: center;
         }
 
         .contact-info img {
@@ -69,8 +95,7 @@
         /* Logo Styling */
         .logo-container {
             background-color: white;
-            padding: 20px 0;
-            width: 100%;
+            padding: 20px;
             text-align: center;
         }
 
@@ -80,12 +105,13 @@
             width: 400px;
         }
 
-        /* Styling for laptop section */
+        /* Laptop List */
         #laptops {
             padding: 50px 20px;
             max-width: 1200px;
             margin: auto;
             box-sizing: border-box;
+            overflow-y: scroll;
         }
 
         #laptops h2 {
@@ -142,45 +168,7 @@
             color: #e74c3c;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .social-links, .contact-info {
-                text-align: center;
-            }
-
-            .laptop-list {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .logo-container img {
-                width: 300px;
-            }
-        }
-
-        /* For extra small devices (phones, less than 600px) */
-        @media (max-width: 600px) {
-            .social-links {
-                padding: 5px;
-            }
-
-            .social-links img {
-                width: 20px;
-            }
-
-            .contact-info {
-                font-size: 12px;
-            }
-
-            #laptops h2 {
-                font-size: 28px;
-            }
-
-            .laptop-item {
-                width: 90%;
-            }
-        }
-
+        /* Footer */
         footer {
             background-color: #2c3e50;
             padding: 20px;
@@ -191,38 +179,68 @@
         footer p {
             margin: 0;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .social-sidebar {
+                display: none;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* For smaller devices (phones) */
+        @media (max-width: 600px) {
+            .laptop-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
     </style>
 </head>
 <body>
 
+    <!-- Sidebar Social Links (Sticky) -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=" target="_blank">
+            <img src="instagram.jfif" alt="Instagram">
+        </a>
+        <a href="https://youtube.com/@classic_computers" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+        </a>
+        <a href="https://maps.google.com/?q=Classic+Computers" target="_blank">
+            <img src="google.png" alt="Google Maps">
+        </a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#laptops">Laptops</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <!-- Header Section -->
     <header>
-         <div class="social-links">
-            <a href="https://www.facebook.com/villagemirror143?mibextid=ZbWKwL" target="_blank">
-                <img src="facebook.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com/classic_computers1?igshid=ZDdkNTZiNTM=" target="_blank">
-                <img src="instagram.jfif" alt="Instagram">
-            </a>
-            <a href="https://youtube.com/@classic_computers" target="_blank">
-                <img src="youtube.png" alt="YouTube">
-            </a>
-            <a href="https://maps.google.com/?q=Classic+Computers" target="_blank">
-                <img src="gmaps.png" alt="Google Maps">
-            </a>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="CLASSIC COMPUTERS LOGO.png" alt="Classic Computers Logo">
         </div>
+
         <!-- Contact Information -->
         <div class="contact-info">
             <p>
                 <img src="whatapp.png" alt="WhatsApp"> +91-9550191261 | Email: <a href="mailto:villagemirror143@gmail.com" style="color: white;">villagemirror143@gmail.com</a>
             </p>
         </div>
-
-        <!-- Logo with White Background -->
-        <div class="logo-container">
-            <img src="CLASSIC COMPUTERS LOGO.png" alt="Classic Computers Logo">
-        </div>
-
     </header>
 
     <!-- Available Laptops Section -->
