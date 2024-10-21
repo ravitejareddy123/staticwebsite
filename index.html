@@ -48,28 +48,29 @@
             color: #f39c12;
         }
 
-        /* Up Arrow */
+        /* Up Arrow Floating Button */
         .up-arrow {
-            width: 30px;
-            height: 30px;
-            border: 2px solid white;
-            border-radius: 50%;
-            display: inline-block;
-            position: relative;
-        }
-
-        .up-arrow::before {
-            content: '\2191'; /* Unicode arrow symbol */
+            width: 50px;
+            height: 50px;
+            background-color: #f39c12;
             color: white;
-            font-size: 18px;
-            position: absolute;
-            top: 5px;
-            left: 5px;
+            border: none;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
         }
 
         .up-arrow:hover {
-            background-color: #f39c12;
-            border-color: #f39c12;
+            background-color: #e67e22;
         }
 
         /* Sidebar Social Links */
@@ -227,6 +228,7 @@
     </style>
 </head>
 <body>
+
     
     <!-- Sidebar Social Links (Sticky) -->
     <div class="social-sidebar">
@@ -244,14 +246,10 @@
         </a>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#laptops">Laptops</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#top" class="up-arrow"></a></li>
-        </ul>
-    </nav>
+    <!-- Floating Up Arrow -->
+    <a href="#top" class="up-arrow">
+        &#x2191;
+    </a>
 
     <!-- Header Section -->
     <header>
